@@ -1,0 +1,359 @@
+Begin Object Class=BehaviorTree Name="FollowerBT"
+   Begin Object Class=AgroCheck_C Name="AgroCheck_C_0"
+   End Object
+   Begin Object Class=BehaviorTreeGraph Name="Behavior Tree"
+      Begin Object Class=BehaviorTreeGraphNode_Composite Name="BehaviorTreeGraphNode_Composite_2"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_24671"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_24672"
+         End Object
+      End Object
+      Begin Object Class=BehaviorTreeGraphNode_Composite Name="BehaviorTreeGraphNode_Composite_5"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_24673"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_24674"
+         End Object
+      End Object
+      Begin Object Class=BehaviorTreeGraphNode_Composite Name="BehaviorTreeGraphNode_Composite_8"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_24675"
+         End Object
+         Begin Object Class=EdGraphPin Name="EdGraphPin_24676"
+         End Object
+      End Object
+      Begin Object Class=BehaviorTreeGraphNode_Decorator Name="BehaviorTreeGraphNode_Decorator_16"
+      End Object
+      Begin Object Class=BehaviorTreeGraphNode_Decorator Name="BehaviorTreeGraphNode_Decorator_33"
+      End Object
+      Begin Object Class=BehaviorTreeGraphNode_Decorator Name="BehaviorTreeGraphNode_Decorator_50"
+      End Object
+      Begin Object Class=BehaviorTreeGraphNode_Decorator Name="BehaviorTreeGraphNode_Decorator_67"
+      End Object
+      Begin Object Class=BehaviorTreeGraphNode_Decorator Name="BehaviorTreeGraphNode_Decorator_84"
+      End Object
+      Begin Object Class=BehaviorTreeGraphNode_Root Name="BehaviorTreeGraphNode_Root_0"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_24670"
+         End Object
+      End Object
+      Begin Object Class=BehaviorTreeGraphNode_Service Name="BehaviorTreeGraphNode_Service_2"
+      End Object
+      Begin Object Class=BehaviorTreeGraphNode_Task Name="BehaviorTreeGraphNode_Task_13"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_25218"
+         End Object
+      End Object
+      Begin Object Class=BehaviorTreeGraphNode_Task Name="BehaviorTreeGraphNode_Task_27"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_25219"
+         End Object
+      End Object
+      Begin Object Class=BehaviorTreeGraphNode_Task Name="BehaviorTreeGraphNode_Task_41"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_25220"
+         End Object
+      End Object
+      Begin Object Class=BehaviorTreeGraphNode_Task Name="BehaviorTreeGraphNode_Task_55"
+         Begin Object Class=EdGraphPin Name="EdGraphPin_25221"
+         End Object
+      End Object
+   End Object
+   Begin Object Class=BTComposite_Selector Name="BTComposite_Selector_0"
+   End Object
+   Begin Object Class=BTComposite_Selector Name="BTComposite_Selector_1"
+   End Object
+   Begin Object Class=BTComposite_Sequence Name="BTComposite_Sequence_0"
+   End Object
+   Begin Object Class=BTDecorator_Blackboard Name="BTDecorator_Blackboard_0"
+   End Object
+   Begin Object Class=BTDecorator_Blackboard Name="BTDecorator_Blackboard_1"
+   End Object
+   Begin Object Class=BTDecorator_Blackboard Name="BTDecorator_Blackboard_2"
+   End Object
+   Begin Object Class=BTDecorator_IsAtLocation Name="BTDecorator_IsAtLocation_0"
+      Begin Object Class=BlackboardKeyType_Object Name="BlackboardKey_Object" Archetype=BlackboardKeyType_Object'Default__BTDecorator_IsAtLocation:BlackboardKey_Object'
+      End Object
+      Begin Object Class=BlackboardKeyType_Vector Name="BlackboardKey_Vector" Archetype=BlackboardKeyType_Vector'Default__BTDecorator_IsAtLocation:BlackboardKey_Vector'
+      End Object
+   End Object
+   Begin Object Class=BTTask_MoveTo Name="BTTask_MoveTo_0"
+      Begin Object Class=BlackboardKeyType_Object Name="BlackboardKey_Object" Archetype=BlackboardKeyType_Object'Default__BTTask_MoveTo:BlackboardKey_Object'
+      End Object
+      Begin Object Class=BlackboardKeyType_Vector Name="BlackboardKey_Vector" Archetype=BlackboardKeyType_Vector'Default__BTTask_MoveTo:BlackboardKey_Vector'
+      End Object
+   End Object
+   Begin Object Class=BTTask_MoveTo Name="BTTask_MoveTo_1"
+      Begin Object Class=BlackboardKeyType_Object Name="BlackboardKey_Object" Archetype=BlackboardKeyType_Object'Default__BTTask_MoveTo:BlackboardKey_Object'
+      End Object
+      Begin Object Class=BlackboardKeyType_Vector Name="BlackboardKey_Vector" Archetype=BlackboardKeyType_Vector'Default__BTTask_MoveTo:BlackboardKey_Vector'
+      End Object
+   End Object
+   Begin Object Class=BTTask_Wait Name="BTTask_Wait_0"
+   End Object
+   Begin Object Class=CloseEnough_C Name="CloseEnough_C_0"
+   End Object
+   Begin Object Class=RapidWalk_C Name="RapidWalk_C_0"
+   End Object
+   Begin Object Name="AgroCheck_C_0"
+      TargetToFollow=(SelectedKeyName="TargetToFollow")
+      TargetLocation=(SelectedKeyName="TargetLocation")
+      RandomDeviation=0.000000
+      TreeAsset=BehaviorTree'FollowerBT'
+      ParentNode=BTComposite_Selector'FollowerBT:BTComposite_Selector_0'
+   End Object
+   Begin Object Name="Behavior Tree"
+      Begin Object Name="BehaviorTreeGraphNode_Composite_2"
+         Begin Object Name="EdGraphPin_24671"
+            PinName="In"
+            PinType=(PinCategory="MultipleNodes")
+            LinkedTo(0)=EdGraphPin'"FollowerBT:Behavior Tree.BehaviorTreeGraphNode_Root_0.EdGraphPin_24670"'
+         End Object
+         Begin Object Name="EdGraphPin_24672"
+            PinName="Out"
+            Direction=EGPD_Output
+            PinType=(PinCategory="MultipleNodes")
+            LinkedTo(0)=EdGraphPin'"FollowerBT:Behavior Tree.BehaviorTreeGraphNode_Composite_5.EdGraphPin_24673"'
+            LinkedTo(1)=EdGraphPin'"FollowerBT:Behavior Tree.BehaviorTreeGraphNode_Composite_8.EdGraphPin_24675"'
+         End Object
+         Services(0)=BehaviorTreeGraphNode_Service'"FollowerBT:Behavior Tree.BehaviorTreeGraphNode_Service_2"'
+         NodeInstance=BTComposite_Selector'FollowerBT:BTComposite_Selector_0'
+         SubNodes(0)=BehaviorTreeGraphNode_Service'"FollowerBT:Behavior Tree.BehaviorTreeGraphNode_Service_2"'
+         Pins(0)=EdGraphPin'EdGraphPin_24671'
+         Pins(1)=EdGraphPin'EdGraphPin_24672'
+         NodePosX=-160
+         NodePosY=-304
+         NodeGuid=F72DDA4BEB47372BE7AC5FA84F10F6A0
+      End Object
+      Begin Object Name="BehaviorTreeGraphNode_Composite_5"
+         Begin Object Name="EdGraphPin_24673"
+            PinName="In"
+            PinType=(PinCategory="MultipleNodes")
+            LinkedTo(0)=EdGraphPin'"FollowerBT:Behavior Tree.BehaviorTreeGraphNode_Composite_2.EdGraphPin_24672"'
+         End Object
+         Begin Object Name="EdGraphPin_24674"
+            PinName="Out"
+            Direction=EGPD_Output
+            PinType=(PinCategory="MultipleNodes")
+            LinkedTo(0)=EdGraphPin'"FollowerBT:Behavior Tree.BehaviorTreeGraphNode_Task_13.EdGraphPin_25218"'
+         End Object
+         Decorators(0)=BehaviorTreeGraphNode_Decorator'"FollowerBT:Behavior Tree.BehaviorTreeGraphNode_Decorator_16"'
+         Decorators(1)=BehaviorTreeGraphNode_Decorator'"FollowerBT:Behavior Tree.BehaviorTreeGraphNode_Decorator_33"'
+         NodeInstance=BTComposite_Selector'FollowerBT:BTComposite_Selector_1'
+         SubNodes(0)=BehaviorTreeGraphNode_Decorator'"FollowerBT:Behavior Tree.BehaviorTreeGraphNode_Decorator_16"'
+         SubNodes(1)=BehaviorTreeGraphNode_Decorator'"FollowerBT:Behavior Tree.BehaviorTreeGraphNode_Decorator_33"'
+         Pins(0)=EdGraphPin'EdGraphPin_24673'
+         Pins(1)=EdGraphPin'EdGraphPin_24674'
+         NodePosX=-432
+         NodePosY=-48
+         NodeGuid=492079FD7C471DBBF518F9A8166F760A
+      End Object
+      Begin Object Name="BehaviorTreeGraphNode_Composite_8"
+         Begin Object Name="EdGraphPin_24675"
+            PinName="In"
+            PinType=(PinCategory="MultipleNodes")
+            LinkedTo(0)=EdGraphPin'"FollowerBT:Behavior Tree.BehaviorTreeGraphNode_Composite_2.EdGraphPin_24672"'
+         End Object
+         Begin Object Name="EdGraphPin_24676"
+            PinName="Out"
+            Direction=EGPD_Output
+            PinType=(PinCategory="MultipleNodes")
+            LinkedTo(0)=EdGraphPin'"FollowerBT:Behavior Tree.BehaviorTreeGraphNode_Task_27.EdGraphPin_25219"'
+            LinkedTo(1)=EdGraphPin'"FollowerBT:Behavior Tree.BehaviorTreeGraphNode_Task_41.EdGraphPin_25220"'
+            LinkedTo(2)=EdGraphPin'"FollowerBT:Behavior Tree.BehaviorTreeGraphNode_Task_55.EdGraphPin_25221"'
+         End Object
+         Decorators(0)=BehaviorTreeGraphNode_Decorator'"FollowerBT:Behavior Tree.BehaviorTreeGraphNode_Decorator_50"'
+         Decorators(1)=BehaviorTreeGraphNode_Decorator'"FollowerBT:Behavior Tree.BehaviorTreeGraphNode_Decorator_67"'
+         Decorators(2)=BehaviorTreeGraphNode_Decorator'"FollowerBT:Behavior Tree.BehaviorTreeGraphNode_Decorator_84"'
+         NodeInstance=BTComposite_Sequence'FollowerBT:BTComposite_Sequence_0'
+         SubNodes(0)=BehaviorTreeGraphNode_Decorator'"FollowerBT:Behavior Tree.BehaviorTreeGraphNode_Decorator_50"'
+         SubNodes(1)=BehaviorTreeGraphNode_Decorator'"FollowerBT:Behavior Tree.BehaviorTreeGraphNode_Decorator_67"'
+         SubNodes(2)=BehaviorTreeGraphNode_Decorator'"FollowerBT:Behavior Tree.BehaviorTreeGraphNode_Decorator_84"'
+         Pins(0)=EdGraphPin'EdGraphPin_24675'
+         Pins(1)=EdGraphPin'EdGraphPin_24676'
+         NodePosX=64
+         NodePosY=-64
+         NodeGuid=AB549B0BB94DD69C1E6A1D90AE851192
+      End Object
+      Begin Object Name="BehaviorTreeGraphNode_Decorator_16"
+         NodeInstance=BTDecorator_Blackboard'FollowerBT:BTDecorator_Blackboard_0'
+         NodeGuid=F5796305B5416FE8611F6DA8BE80704A
+      End Object
+      Begin Object Name="BehaviorTreeGraphNode_Decorator_33"
+         ClassData=(AssetName="CloseEnough",GeneratedClassPackage="/Game/ThirdPersonBP/CloseEnough",ClassName="CloseEnough_C")
+         NodeInstance=CloseEnough_C'FollowerBT:CloseEnough_C_0'
+         NodeGuid=034B2478ED4C5190457A639FD2C4E9F2
+      End Object
+      Begin Object Name="BehaviorTreeGraphNode_Decorator_50"
+         NodeInstance=BTDecorator_Blackboard'FollowerBT:BTDecorator_Blackboard_1'
+         NodeGuid=5890B73A5648DE4141E38EB223AEE4E4
+      End Object
+      Begin Object Name="BehaviorTreeGraphNode_Decorator_67"
+         NodeInstance=BTDecorator_IsAtLocation'FollowerBT:BTDecorator_IsAtLocation_0'
+         NodeGuid=89D136B13448F5672B55DD99AD7770A2
+      End Object
+      Begin Object Name="BehaviorTreeGraphNode_Decorator_84"
+         NodeInstance=BTDecorator_Blackboard'FollowerBT:BTDecorator_Blackboard_2'
+         NodeGuid=FADDDA6E904B9B8AAF55EF888C414C81
+      End Object
+      Begin Object Name="BehaviorTreeGraphNode_Root_0"
+         Begin Object Name="EdGraphPin_24670"
+            PinName="In"
+            Direction=EGPD_Output
+            PinType=(PinCategory="SingleComposite")
+            LinkedTo(0)=EdGraphPin'"FollowerBT:Behavior Tree.BehaviorTreeGraphNode_Composite_2.EdGraphPin_24671"'
+         End Object
+         BlackboardAsset=BlackboardData'/Game/ThirdPersonBP/FollowerBlackboard.FollowerBlackboard'
+         Pins(0)=EdGraphPin'EdGraphPin_24670'
+         NodePosX=-144
+         NodePosY=-464
+         NodeGuid=A69A68B18A4B9BF7F1A32997865B2B8B
+      End Object
+      Begin Object Name="BehaviorTreeGraphNode_Service_2"
+         ClassData=(AssetName="AgroCheck",GeneratedClassPackage="/Game/ThirdPersonBP/AgroCheck",ClassName="AgroCheck_C")
+         NodeInstance=AgroCheck_C'FollowerBT:AgroCheck_C_0'
+         NodeGuid=3AB36508E84D2AF3DC7C40B8E05D5FC3
+      End Object
+      Begin Object Name="BehaviorTreeGraphNode_Task_13"
+         Begin Object Name="EdGraphPin_25218"
+            PinName="In"
+            PinType=(PinCategory="SingleComposite")
+            LinkedTo(0)=EdGraphPin'"FollowerBT:Behavior Tree.BehaviorTreeGraphNode_Composite_5.EdGraphPin_24674"'
+         End Object
+         ClassData=(AssetName="RapidWalk",GeneratedClassPackage="/Game/ThirdPersonBP/RapidWalk",ClassName="RapidWalk_C")
+         NodeInstance=RapidWalk_C'FollowerBT:RapidWalk_C_0'
+         Pins(0)=EdGraphPin'EdGraphPin_25218'
+         NodePosX=-448
+         NodePosY=256
+         NodeGuid=18E393D2FE4AC6D52AA763B3A4ADF5CF
+      End Object
+      Begin Object Name="BehaviorTreeGraphNode_Task_27"
+         Begin Object Name="EdGraphPin_25219"
+            PinName="In"
+            PinType=(PinCategory="SingleComposite")
+            LinkedTo(0)=EdGraphPin'"FollowerBT:Behavior Tree.BehaviorTreeGraphNode_Composite_8.EdGraphPin_24676"'
+         End Object
+         NodeInstance=BTTask_MoveTo'FollowerBT:BTTask_MoveTo_0'
+         Pins(0)=EdGraphPin'EdGraphPin_25219'
+         NodePosX=48
+         NodePosY=272
+         NodeGuid=E4DA9FC8964A3A8D307DCEA11A791371
+      End Object
+      Begin Object Name="BehaviorTreeGraphNode_Task_41"
+         Begin Object Name="EdGraphPin_25220"
+            PinName="In"
+            PinType=(PinCategory="SingleComposite")
+            LinkedTo(0)=EdGraphPin'"FollowerBT:Behavior Tree.BehaviorTreeGraphNode_Composite_8.EdGraphPin_24676"'
+         End Object
+         NodeInstance=BTTask_Wait'FollowerBT:BTTask_Wait_0'
+         Pins(0)=EdGraphPin'EdGraphPin_25220'
+         NodePosX=272
+         NodePosY=256
+         NodeGuid=F8E570F8314FD2DCE062F1878C4E2AD6
+      End Object
+      Begin Object Name="BehaviorTreeGraphNode_Task_55"
+         Begin Object Name="EdGraphPin_25221"
+            PinName="In"
+            PinType=(PinCategory="SingleComposite")
+            LinkedTo(0)=EdGraphPin'"FollowerBT:Behavior Tree.BehaviorTreeGraphNode_Composite_8.EdGraphPin_24676"'
+         End Object
+         NodeInstance=BTTask_MoveTo'FollowerBT:BTTask_MoveTo_1'
+         Pins(0)=EdGraphPin'EdGraphPin_25221'
+         NodePosX=448
+         NodePosY=272
+         NodeGuid=BD4878E6A740EBADCC62DFA750F846C2
+      End Object
+      ModCounter=13
+      bIsUsingModCounter=True
+      GraphVersion=2
+      Nodes(0)=BehaviorTreeGraphNode_Root'BehaviorTreeGraphNode_Root_0'
+      Nodes(1)=BehaviorTreeGraphNode_Composite'BehaviorTreeGraphNode_Composite_2'
+      Nodes(2)=BehaviorTreeGraphNode_Composite'BehaviorTreeGraphNode_Composite_5'
+      Nodes(3)=BehaviorTreeGraphNode_Composite'BehaviorTreeGraphNode_Composite_8'
+      Nodes(4)=BehaviorTreeGraphNode_Task'BehaviorTreeGraphNode_Task_13'
+      Nodes(5)=BehaviorTreeGraphNode_Task'BehaviorTreeGraphNode_Task_27'
+      Nodes(6)=BehaviorTreeGraphNode_Task'BehaviorTreeGraphNode_Task_41'
+      Nodes(7)=BehaviorTreeGraphNode_Task'BehaviorTreeGraphNode_Task_55'
+      GraphGuid=0D2878884248EA359BAC6AA90EE2A75D
+   End Object
+   Begin Object Name="BTComposite_Selector_0"
+      Children(0)=(ChildComposite=BTComposite_Selector'FollowerBT:BTComposite_Selector_1',Decorators=(BTDecorator_Blackboard'FollowerBT:BTDecorator_Blackboard_0',CloseEnough_C'FollowerBT:CloseEnough_C_0'))
+      Children(1)=(ChildComposite=BTComposite_Sequence'FollowerBT:BTComposite_Sequence_0',Decorators=(BTDecorator_Blackboard'FollowerBT:BTDecorator_Blackboard_1',BTDecorator_IsAtLocation'FollowerBT:BTDecorator_IsAtLocation_0',BTDecorator_Blackboard'FollowerBT:BTDecorator_Blackboard_2'))
+      Services(0)=AgroCheck_C'FollowerBT:AgroCheck_C_0'
+      TreeAsset=BehaviorTree'FollowerBT'
+   End Object
+   Begin Object Name="BTComposite_Selector_1"
+      Children(0)=(ChildTask=RapidWalk_C'FollowerBT:RapidWalk_C_0')
+      TreeAsset=BehaviorTree'FollowerBT'
+      ParentNode=BTComposite_Selector'FollowerBT:BTComposite_Selector_0'
+   End Object
+   Begin Object Name="BTComposite_Sequence_0"
+      Children(0)=(ChildTask=BTTask_MoveTo'FollowerBT:BTTask_MoveTo_0')
+      Children(1)=(ChildTask=BTTask_Wait'FollowerBT:BTTask_Wait_0')
+      Children(2)=(ChildTask=BTTask_MoveTo'FollowerBT:BTTask_MoveTo_1')
+      TreeAsset=BehaviorTree'FollowerBT'
+      ParentNode=BTComposite_Selector'FollowerBT:BTComposite_Selector_0'
+   End Object
+   Begin Object Name="BTDecorator_Blackboard_0"
+      CachedDescription="TargetToFollow is Set"
+      BlackboardKey=(SelectedKeyName="TargetToFollow")
+      FlowAbortMode=Both
+      TreeAsset=BehaviorTree'FollowerBT'
+      ParentNode=BTComposite_Selector'FollowerBT:BTComposite_Selector_0'
+   End Object
+   Begin Object Name="BTDecorator_Blackboard_1"
+      CachedDescription="TargetToFollow is NotSet"
+      OperationType=1
+      BasicOperation=NotSet
+      BlackboardKey=(SelectedKeyName="TargetToFollow")
+      TreeAsset=BehaviorTree'FollowerBT'
+      ParentNode=BTComposite_Selector'FollowerBT:BTComposite_Selector_0'
+   End Object
+   Begin Object Name="BTDecorator_Blackboard_2"
+      CachedDescription="TargetLocation is Set"
+      BlackboardKey=(SelectedKeyName="TargetLocation")
+      TreeAsset=BehaviorTree'FollowerBT'
+      ParentNode=BTComposite_Selector'FollowerBT:BTComposite_Selector_0'
+   End Object
+   Begin Object Name="BTDecorator_IsAtLocation_0"
+      Begin Object Name="BlackboardKey_Object"
+      End Object
+      Begin Object Name="BlackboardKey_Vector"
+      End Object
+      BlackboardKey=(SelectedKeyName="SelfActor")
+      TreeAsset=BehaviorTree'FollowerBT'
+      ParentNode=BTComposite_Selector'FollowerBT:BTComposite_Selector_0'
+   End Object
+   Begin Object Name="BTTask_MoveTo_0"
+      Begin Object Name="BlackboardKey_Object"
+      End Object
+      Begin Object Name="BlackboardKey_Vector"
+      End Object
+      BlackboardKey=(SelectedKeyName="TargetLocation")
+      TreeAsset=BehaviorTree'FollowerBT'
+      ParentNode=BTComposite_Sequence'FollowerBT:BTComposite_Sequence_0'
+   End Object
+   Begin Object Name="BTTask_MoveTo_1"
+      Begin Object Name="BlackboardKey_Object"
+      End Object
+      Begin Object Name="BlackboardKey_Vector"
+      End Object
+      BlackboardKey=(SelectedKeyName="HomeLocation")
+      TreeAsset=BehaviorTree'FollowerBT'
+      ParentNode=BTComposite_Sequence'FollowerBT:BTComposite_Sequence_0'
+   End Object
+   Begin Object Name="BTTask_Wait_0"
+      WaitTime=2.500000
+      TreeAsset=BehaviorTree'FollowerBT'
+      ParentNode=BTComposite_Sequence'FollowerBT:BTComposite_Sequence_0'
+   End Object
+   Begin Object Name="CloseEnough_C_0"
+      AcceptableDistance=100.000000
+      TargetToFollow=(SelectedKeyName="TargetToFollow")
+      TreeAsset=BehaviorTree'FollowerBT'
+      ParentNode=BTComposite_Selector'FollowerBT:BTComposite_Selector_0'
+   End Object
+   Begin Object Name="RapidWalk_C_0"
+      TargetToFollow=(SelectedKeyName="TargetToFollow")
+      TreeAsset=BehaviorTree'FollowerBT'
+      ParentNode=BTComposite_Selector'FollowerBT:BTComposite_Selector_1'
+   End Object
+   RootNode=BTComposite_Selector'BTComposite_Selector_0'
+   BTGraph=BehaviorTreeGraph'"Behavior Tree"'
+   LastEditedDocuments(0)=(EditedObject=BehaviorTreeGraph'"Behavior Tree"',SavedViewOffset=(X=-586.561340,Y=-618.000000),SavedZoomAmount=1.000000)
+   BlackboardAsset=BlackboardData'/Game/ThirdPersonBP/FollowerBlackboard.FollowerBlackboard'
+End Object

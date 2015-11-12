@@ -1,0 +1,23 @@
+Begin Object Class=BlackboardData Name="FollowerBlackboard"
+   Begin Object Class=BlackboardKeyType_Object Name="BlackboardKeyType_Object_0"
+   End Object
+   Begin Object Class=BlackboardKeyType_Vector Name="BlackboardKeyType_Vector_0"
+   End Object
+   Begin Object Class=BlackboardKeyType_Vector Name="BlackboardKeyType_Vector_1"
+   End Object
+   Begin Object Class=BlackboardKeyType_Object Name="BlackboardKeyType_Object_1"
+   End Object
+   Begin Object Name="BlackboardKeyType_Object_0"
+   End Object
+   Begin Object Name="BlackboardKeyType_Vector_0"
+   End Object
+   Begin Object Name="BlackboardKeyType_Vector_1"
+   End Object
+   Begin Object Name="BlackboardKeyType_Object_1"
+      BaseClass=Class'/Script/Engine.Actor'
+   End Object
+   Keys(0)=(EntryName="TargetToFollow",KeyType=BlackboardKeyType_Object'BlackboardKeyType_Object_0')
+   Keys(1)=(EntryName="HomeLocation",KeyType=BlackboardKeyType_Vector'BlackboardKeyType_Vector_0')
+   Keys(2)=(EntryName="TargetLocation",KeyType=BlackboardKeyType_Vector'BlackboardKeyType_Vector_1')
+   Keys(3)=(EntryName="SelfActor",KeyType=BlackboardKeyType_Object'BlackboardKeyType_Object_1')
+End Object
